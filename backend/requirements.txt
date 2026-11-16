@@ -1,0 +1,33 @@
+# Runtime dependencies (pinned to versions verified with the Milestone 1 test suite, Python 3.13)
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+python-dotenv==1.0.1
+pydantic==2.13.5
+email-validator==2.3.0
+google-genai==3.3.0
+# Persistence
+sqlalchemy==2.1.8
+aiosqlite==0.22.1
+greenlet==3.5.6
+alembic==1.20.1
+# PostgreSQL (production / Supabase): asyncpg for the app, psycopg 3 for Alembic migrations
+asyncpg==0.32.0
+psycopg[binary]==3.3.9
+# Execution engine / HTTP node
+httpx==0.28.1
+# Auth and credential encryption
+PyJWT==2.15.1
+pwdlib[argon2]==0.4.0
+cryptography==50.0.0
+# AI model providers + agent runtime (Milestone 2; versions verified together on Python 3.13)
+langchain-core==1.8.0
+langchain-openai==1.8.0
+langchain-anthropic==1.7.10
+langchain-google-genai==4.5.0
+langgraph==1.2.22
+openai==3.50.0
+anthropic==2.8.0
+jsonschema==4.26.0
+# Schedule Trigger (cron parsing; tzdata provides IANA zones on Windows)
+croniter==7.0.0
+tzdata==2026.3
